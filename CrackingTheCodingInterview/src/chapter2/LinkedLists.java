@@ -357,7 +357,7 @@ public class LinkedLists {
 			if(slow == fast) break;//found circle
 		}
 //		no circle
-		if(fast == null || fast.next != null)
+		if(fast == null || fast.next == null)
 			return null;
 //		since the distance from meeting point to start of loop is same as the distance from beginning to the start of loop,
 //		both of them are equal to k
